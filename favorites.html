@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alkreate</title>
+  <link rel="icon" type="image/x-icon" href="image/minecraft icon.jpg">
+
+  <!-- 引入 Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
+
+<!-- 引入 Bootstrap Bundle JS（包含 Popper.js） -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+  <!-- 引入 Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- 引入 Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- 引入自定义 CSS -->
+  <link rel="stylesheet" href="styles.css">
+  <!-- 网站图标 -->
+  <link rel="icon" href="favicon.png/A .png" type="image/x-icon">
+  
+</head>
+<body>
+  
+  
+<!-- 导航栏 -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="favicon.png/alkreate.png" alt="Brand Logo" style="height: 40px;">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index2.html">Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="favorites.html">Favorites</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact Me</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            SHORTCUT
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#favorite-youtuber-category">YOUTUBER</a></li>
+            <li><a class="dropdown-item" href="#favorite-games-category">GAMES</a></li>
+            <li><a class="dropdown-item" href="#favorite-music-category">MUSICS</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section id="favorite-section">
+    <h2>FAVORITES</h2>
+
+    <div id="favorite-youtuber-category" class="favorite-category">
+        <h3>YouTuber</h3>
+        <div id="youtuber-list" class="favorite-list">
+            <!-- YouTuber 1 -->
+            <div id="youtuber-pewdiepie" class="favorite-item">
+                <div class="video-container">
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/GPLImB-I71w?si=7b_QMLrfpIPs8_Ry" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <p>PEWDIEPIE</p>
+                <a href="https://youtu.be/GPLImB-I71w?si=n4KobPtlFJIyR_kO" target="_blank">访问频道</a>
+            </div>
+            <!-- YouTuber 2 -->
+            <div id="youtuber-hololive" class="favorite-item">
+                <div class="video-container">
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/8c4_22LjGQo?si=LG-K3n2jfqLUTiko" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <p>Hololive</p>
+                <a href="https://youtu.be/8c4_22LjGQo?si=c84feTktYKgdb8Pu" target="_blank">访问频道</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="favorite-games-category" class="favorite-category">
+        <h3>GAMES</h3>
+        <div id="games-list" class="favorite-list">
+            <!-- 游戏 1 -->
+            <div id="game-minecraft" class="favorite-item">
+                <div class="video-container">
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/jMe3tdyjouM?si=ibmt6znN2eKYi0X-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <p>MINECRAFT</p>
+                <a href="https://youtu.be/jMe3tdyjouM?si=5T-Kd0KcNIMZ-bIE" target="_blank">了解更多</a>
+            </div>
+            <!-- 游戏 2 -->
+            <div id="game-mhw" class="favorite-item">
+                <div class="video-container">
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/OotQrKEqe94?si=pEw4fE4PIuubB9CA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <p>MONSTER HUNTER WORLD</p>
+                <a href="https://youtu.be/OotQrKEqe94?si=Sr1VIewwePlF9H53" target="_blank">了解更多</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="favorite-music-category" class="favorite-category">
+        <h3>MUSICS</h3>
+        <div id="music-list" class="favorite-list">
+            <!-- 音乐 1 -->
+            <div id="music-minecraft" class="favorite-item">
+                <div class="video-container">
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/CcAV71mXg_8?si=kFtNGs8avZ-TRcnA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <p>Minecraft</p>
+                <a href="https://youtu.be/CcAV71mXg_8?si=IyNg32Nrh-1Hp3fq" target="_blank">听这首歌</a>
+            </div>
+            <!-- 音乐 2 -->
+            <div id="music-eve" class="favorite-item">
+                <div class="video-container">
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/nROvY9uiYYk?si=niRKEi_s6PgIzd6T" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <p>EVE</p>
+                <a href="https://youtu.be/nROvY9uiYYk?si=DbcL4Ert5z7oU_g5" target="_blank">听这首歌</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- CSS -->
+<style>
+/* Set initial styles for nav items */
+.navbar-nav .nav-link {
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+/* Hover effect on nav items */
+.navbar-nav .nav-link:hover {
+  color: #ff6347; /* Change color on hover (you can adjust the color) */
+  font-size: 1.2rem; /* Increase font size on hover */
+}
+
+/* Optional: Add a background color on hover for better visibility */
+.navbar-nav .nav-item:hover {
+  background-color: #f0f0f0; /* Background color on hover */
+}
+</style>
+
+
+  <!-- 页脚 -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p>© 2025 Alkreate. All Rights Reserved. </p>
+  </footer>
+
+  <!-- 引入 Bootstrap JS 和 Popper.js -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+  <!-- 引入自定义 JS -->
+  <script src="style1.js"></script>
+</body>
+</html>

@@ -86,4 +86,236 @@
   .about-decorative-text {
     font-size: 1.5em; /* 將裝飾性文字的字體大小設置為父元素的 1.5 倍 */
   }
-    
+/* Set initial styles for nav items */
+.navbar-nav .nav-link {
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+/* Hover effect on nav items */
+.navbar-nav .nav-link:hover {
+  color: #ff6347; /* Change color on hover (you can adjust the color) */
+  font-size: 1.2rem; /* Increase font size on hover */
+}
+
+/* Optional: Add a background color on hover for better visibility */
+.navbar-nav .nav-item:hover {
+  background-color: #f0f0f0; /* Background color on hover */
+}
+
+/* Portfolio Section */
+.portfolio-section {
+  padding: 50px 0;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+}
+
+.year-portfolio h3 {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 1.8rem;
+  color: #333;
+}
+
+.portfolio-item {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+/* Default card style */
+.portfolio-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.portfolio-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.portfolio-info {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: #fff;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.portfolio-info h5 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.portfolio-info p {
+  font-size: 1rem;
+}
+
+/* Hover Effect */
+.portfolio-item:hover .portfolio-card {
+  transform: scale(1.05);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.portfolio-item:hover .portfolio-card:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--hover-glow);
+  border-radius: 10px;
+  z-index: 1;
+  transition: background 0.3s ease;
+}
+
+/* Glow Effect */
+.portfolio-item[data-color] {
+  --hover-glow: var(--glow-color);
+}
+
+/* You can add more color options as needed */
+.portfolio-item[data-color="rgba(255, 99, 71, 0.6)"] {
+  --glow-color: rgba(255, 99, 71, 0.6); /* Red Glow */
+}
+
+.portfolio-item[data-color="rgba(100, 149, 237, 0.6)"] {
+  --glow-color: rgba(100, 149, 237, 0.6); /* Blue Glow */
+}
+
+.portfolio-item[data-color="rgba(34, 193, 195, 0.6)"] {
+  --glow-color: rgba(34, 193, 195, 0.6); /* Teal Glow */
+}
+/* Set the default state of portfolio items */
+.portfolio-item {
+  position: relative;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Small default shadow */
+}
+
+/* Apply glow effect when the mouse hovers */
+.portfolio-item:hover {
+  filter: brightness(1.1); /* Lighten the item */
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.7); /* Glowing effect */
+}
+
+/* To apply different colors for the glow effect */
+.portfolio-item[data-color="rgba(255, 99, 71, 0.6)"]:hover {
+  box-shadow: 0 0 20px rgba(255, 99, 71, 0.8); /* Red glow */
+}
+
+.portfolio-item[data-color="rgba(100, 149, 237, 0.6)"]:hover {
+  box-shadow: 0 0 20px rgba(100, 149, 237, 0.8); /* Blue glow */
+}
+
+.portfolio-item[data-color="rgba(255, 105, 180, 0.6)"]:hover {
+  box-shadow: 0 0 20px rgba(255, 105, 180, 0.8); /* Pink glow */
+}
+
+.portfolio-item[data-color="rgba(60, 179, 113, 0.6)"]:hover {
+  box-shadow: 0 0 20px rgba(60, 179, 113, 0.8); /* Green glow */
+}
+
+.portfolio-item[data-color="rgba(255, 165, 0, 0.6)"]:hover {
+  box-shadow: 0 0 20px rgba(255, 165, 0, 0.8); /* Orange glow */
+}
+
+/* Optional: Add transition for smooth hover effect */
+.portfolio-item:hover {
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+#favorite-section {
+  padding: 40px;
+  background-color: #12002d;
+  text-align: center;
+}
+
+#favorite-section h2 {
+  font-size: 2em;
+  color: #fff9f9;
+  margin-bottom: 30px;
+}
+
+.favorite-category {
+  margin-bottom: 40px;
+}
+
+.favorite-category h3 {
+  font-size: 1.5em;
+  color: #dbe4ed;
+  margin-bottom: 20px;
+}
+
+.favorite-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.favorite-item {
+  background-color: #fff;
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.favorite-item iframe {
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.favorite-item p {
+  font-size: 1.2em;
+  color: #333;
+  margin-top: 10px;
+}
+
+.favorite-item a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #3498db;
+  text-decoration: none;
+  font-size: 1em;
+}
+
+.favorite-item a:hover {
+  text-decoration: underline;
+}
+
+.favorite-item:hover {
+  transform: scale(1.05);
+}
+/* Remove sticky or fixed navbar behavior */
+.navbar {
+  position: relative; /* Ensures the navbar is not fixed or sticky */
+  z-index: 1; /* Optional: Adjust if you need to control layering */
+}
+/* Restrict the size of the logo */
+.logo-image {
+  max-width: 150px; /* Adjust the max width */
+  max-height: 40px; /* Adjust the max height */
+  object-fit: contain; /* Keep aspect ratio */
+}
+
+/* Restrict the size of social icons */
+.social-icon {
+  width: 40px; /* Set the width */
+  height: 40px; /* Set the height */
+  object-fit: cover; /* Crop or resize images gracefully */
+}
